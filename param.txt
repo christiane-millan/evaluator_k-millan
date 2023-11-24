@@ -1,0 +1,46 @@
+#
+#
+#
+#
+#
+#
+#
+
+
+# Ruta del archivo que contien los pares relevantes
+
+-OBJETIVE 	LASA76v2.txt 	
+
+
+
+#Ruta de la carpeta donde se encuentran los resultados de las medidas (espeficicar cual debe ser la característica de este archivo) 
+
+-TOEVALUATE 	SOUNDEX_SIM_MEDICINE76v2
+
+
+
+# Formato de los resultados presentados en las medidas de OBJETIVE (ED=distancia o SIM=similitud) 
+
+-FORMATTK	SIM
+
+
+
+# Tipo de evaluación a implementar Kondrak[KDRK] o la propuesta[MILLAN] (revisar tesis para conocer la forma de evaliuación)
+
+-TYPEK		MIL
+
+# Resultados a mostrar ALL:RES:BTTR:OFF
+
+-SHOW		ALL
+
+-METRIC		FM
+
+# Devuelve la sumatoria de los primeros FMeasure, solo si el parametro SHOW=BTTR
+
+-NMT		4
+
+
+
+# Archivo donde se almacena SHOW, si no se específica es igual al valor de OBJETIVE
+
+-FOUT		out.bin
